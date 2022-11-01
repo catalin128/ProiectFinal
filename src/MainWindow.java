@@ -27,9 +27,10 @@ public class MainWindow extends JFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
                 frame_joc = new FereastraJoc();
+                frame_joc.setSize(1200,800);
                 frame_joc.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-                frame_joc.pack();
-                //frame.setLocationRelativeTo(null);
+                //frame_joc.pack();
+                frame_joc.setLocationRelativeTo(null);
                 frame_joc.setVisible(true);
 
             }

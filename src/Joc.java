@@ -65,4 +65,7 @@ public class Joc {
     public void setRestrictieVarsta(boolean restrictieVarsta) {
         this.restrictieVarsta = restrictieVarsta;
     }
+    public String toString(){
+        return "Nume: "+nume+" Categorie: "+categorie+" Pret: "+pret+" Dezvoltator: "+dezvoltator;
+    }
 }
