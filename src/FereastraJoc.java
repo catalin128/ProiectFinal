@@ -4,7 +4,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.ArrayList;
 
-public class FereastraJoc extends JFrame{
+public class  FereastraJoc extends JFrame{
     private JPanel panouJoc;
     private JTextField textNume;
     private JTextField textCategorie;
@@ -22,7 +22,8 @@ public class FereastraJoc extends JFrame{
     private JLabel labelAfisare;
     private JLabel labelModificare;
     private JLabel label = new JLabel();
-    public ArrayList<Joc> j;
+    public static ArrayList<Magazin> j;
+    private int nrjocuri=0;
     public FereastraJoc(){
         panouJoc.setOpaque(false);
         // panouPrincipal.setLayout(new FlowLayout());
@@ -31,7 +32,7 @@ public class FereastraJoc extends JFrame{
         label.setLayout(new BorderLayout());
         label.add(panouJoc);
         add(label);
-        j=new ArrayList<Joc>();
+        j=new ArrayList<Magazin>();
 
 
         btnAdaugare.addActionListener(new ActionListener() {
@@ -60,14 +61,15 @@ public class FereastraJoc extends JFrame{
                         restrictiebool=true;
                     else
                         restrictiebool=false;
-                    for(Joc i:j)
+                    for(Magazin i:j)
                     {
                         if(i.getNume().equals(nume))
                             ok=0;
                     }
                     if(ok==1)
                     {
-                        Joc aux=new Joc(nume,categorie,pret,dezvoltator,restrictiebool);
+                        nrjocuri++;
+                        Magazin aux=new Magazin(nrjocuri,0,nume,categorie,dezvoltator,pret,restrictiebool);
                         j.add(aux);
 
                     }
@@ -89,7 +91,7 @@ public class FereastraJoc extends JFrame{
             @Override
             public void actionPerformed(ActionEvent e) {
                int ok;
-                for(Joc i:j){
+                for(Magazin i:j){
                     if(i.getNume().equals(textNume.getText())){
                         ok=1;
                         if(!textPret.getText().isEmpty()) {
@@ -114,7 +116,7 @@ public class FereastraJoc extends JFrame{
             @Override
             public void actionPerformed(ActionEvent e) {
                 int ok=0;
-                for(Joc i:j){
+                for(Magazin i:j){
                     if(i.getNume().equals(textNume.getText())) {
                         j.remove(i);
                         ok=1;
@@ -124,6 +126,8 @@ public class FereastraJoc extends JFrame{
                 if(ok==0) JOptionPane.showMessageDialog(null, "Nu exista un joc cu acest nume");
             }
         });
+
+
     }
 
 }

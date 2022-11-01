@@ -1,9 +1,13 @@
+import java.util.ArrayList;
+
 public class Joc {
     private String nume;
     private String categorie;
     private int pret;
     private String dezvoltator;
     private boolean restrictieVarsta;
+    private int suma;
+    private ArrayList<Magazin> a;
 
     public Joc()
     {
@@ -67,5 +71,14 @@ public class Joc {
     }
     public String toString(){
         return "Nume: "+nume+" Categorie: "+categorie+" Pret: "+pret+" Dezvoltator: "+dezvoltator;
+    }
+
+    public void setSuma(int suma)
+    {
+        this.suma=suma;
+    }
+
+    public int getSuma() {
+        return suma;
     }
 }
