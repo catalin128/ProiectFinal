@@ -12,6 +12,7 @@ public class fereastraClient extends JFrame{
     private JTextField textAdaugare;
     private JTextField textField1;
     private JPanel panouClient;
+    private JButton apelareSingletonButton;
     private JLabel label = new JLabel();
     public static ArrayList <Client> c;
     int nrClienti = 0;
@@ -53,6 +54,13 @@ public class fereastraClient extends JFrame{
                 Client aux= new Client("",-1);
                int rezultat= aux.medieJocuri(nrClienti,nrJoc);
                labelAfisare.setText(String.valueOf(rezultat));
+            }
+        });
+        apelareSingletonButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                Singleton x = Singleton.getInstance();
+                labelAfisare.setText(x.s);
             }
         });
     }
