@@ -1,3 +1,4 @@
+import proiectPack.*;
 public class Client extends StareClient implements IClient {
     String numeClient;
     int nrJocuri;
