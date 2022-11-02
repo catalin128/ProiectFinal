@@ -1,4 +1,15 @@
 # ProiectFinal
+Diagrama UML:
+
+
+
+
+
+ ![image](https://user-images.githubusercontent.com/116715647/199482743-c258c5a0-5dde-4b57-b017-094e40d4b372.png)
+
+ 
+ 
+ 
 ![image](https://user-images.githubusercontent.com/97623661/199448675-8c00a303-45ea-4072-88bb-0d959d013610.png)
 Fereastra principala:
 Butonul "Deschidere meniu magazin" va deschide o fereastra pentru Magazin.
