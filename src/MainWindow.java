@@ -13,6 +13,7 @@ public class MainWindow extends JFrame {
     private JLabel labelBackground=new JLabel();
     private JFrame frame_joc;
     private JFrame frameMagazin;
+    private JFrame frameClient;
 
     public MainWindow()
     {
@@ -45,6 +46,17 @@ public class MainWindow extends JFrame {
                 //frameMagazin.pack();
                 frameMagazin.setLocationRelativeTo(null);
                 frameMagazin.setVisible(true);
+            }
+        });
+        btnClienti.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                frameClient = new fereastraClient();
+                frameClient.setSize(1200,200);
+                frameClient.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+                //frameClient.pack();
+                frameClient.setLocationRelativeTo(null);
+                frameClient.setVisible(true);
             }
         });
     }
