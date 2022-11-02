@@ -21,7 +21,8 @@ Butonul "Sterge Joc" va sterge un joc din lista magazinului, pentru a sterge un 
 
 Fereastra Client:
 
-![image](https://user-images.githubusercontent.com/97623661/199450749-c41f9d74-984c-4185-9966-f80f6cb29cc4.png)
+![image](https://user-images.githubusercontent.com/97623661/199452387-7ccf396d-d57c-426a-85ae-c6c0c0f0fe8c.png)
 Butonul "Adaugare" va adauga un nou client.
 Butonul "Afisare Medie Jocuri" va afisa media jocurilor cumparate per client.
+Butonul "Afisare Stare" va afisa o stare pentru un client.
 Butonul "Apelare Singleton" va apela o clasa singleton.
