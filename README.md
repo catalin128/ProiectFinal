@@ -1,4 +1,6 @@
-# ProiectFinal
+# ProiectFinal: Aplicatie de gestiune a unui magazin de jocuri video
+
+Cu aceasta aplicatie vom putea gestiona un magazin de jocuri si clientii acestuia
 Diagrama UML:
 
 
@@ -7,7 +9,8 @@ Diagrama UML:
 
  ![image](https://user-images.githubusercontent.com/116715647/199482743-c258c5a0-5dde-4b57-b017-094e40d4b372.png)
 
- 
+ ![image](https://user-images.githubusercontent.com/116715647/199525515-2fc4c602-25c1-4469-be64-acef43503d0f.png)
+
  
  
 ![image](https://user-images.githubusercontent.com/97623661/199448675-8c00a303-45ea-4072-88bb-0d959d013610.png)
