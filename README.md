@@ -1,6 +1,8 @@
 # ProiectFinal: Aplicatie de gestiune a unui magazin de jocuri video
 
 Cu aceasta aplicatie vom putea gestiona un magazin de jocuri si clientii acestuia
+
+
 Diagrama UML:
 
 
